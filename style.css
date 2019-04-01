@@ -1,0 +1,217 @@
+ * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Averia Sans Libre', cursive;
+ }
+
+ body {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   height: 100vh;
+   overflow: hidden;
+ }
+
+ header {
+   flex-basis: 10%;
+   background-color: #1E131E;
+ }
+
+ header h1 {
+   line-height: 10vh;
+   text-align: center;
+   color: aliceblue;
+   text-transform: uppercase;
+   font-size: 2.5rem;
+   letter-spacing: 3px;
+ }
+
+ header h1 i {
+   transition: 0.5s;
+ }
+
+ header h1 i:hover {
+   transform: rotate(540deg);
+ }
+
+ main {
+   display: flex;
+   flex-direction: row;
+   height: 85vh;
+ }
+
+ .board {
+   display: flex;
+   flex-grow: 1;
+   flex-wrap: wrap;
+   padding: 0 10px;
+   background-color: #1E131E;
+ }
+
+ .board div {
+   flex-basis: 15%;
+   flex-grow: 1;
+   height: 33.33%;
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-color: black;
+   border: 2px solid rgb(165, 228, 20);
+ }
+
+ @media (orientation: portrait) {
+   .board div {
+     flex-basis: 30%;
+     height: 14.16vh;
+   }
+ }
+
+ .amphibian {
+   background-image: url(animals/amphibian.png);
+ }
+
+ .bears {
+   background-image: url(animals/bears.png);
+ }
+
+ .chicken {
+   background-image: url(animals/chicken.png);
+ }
+
+ .dog {
+   background-image: url(animals/dog.png);
+ }
+
+ .goldfish {
+   background-image: url(animals/goldfish.png);
+ }
+
+ .panda {
+   background-image: url(animals/panda.png);
+ }
+
+ .seal {
+   background-image: url(animals/seal.png);
+ }
+
+ .tucan {
+   background-image: url(animals/tucan.png);
+ }
+
+ .turtle {
+   background-image: url(animals/turtle.png);
+ }
+
+ .off {
+   background-image: url(animals/sun.png)
+ }
+
+ .hidden {
+   background-image: none;
+ }
+
+ aside {
+   position: relative;
+   flex-basis: 20%;
+   border-right: 10px solid #1E131E;
+   background-color: aliceblue;
+   overflow: hidden;
+ }
+
+ aside h3 {
+   margin: 10px 5px 20px;
+   text-align: center;
+   font-size: 32px;
+   color: #1E131E;
+   text-transform: uppercase;
+   font-weight: bold;
+ }
+
+ aside h3 i {
+   padding-right: 10px;
+   transition: 1s;
+ }
+
+ aside h3 i:hover {
+   color: goldenrod;
+ }
+
+ aside ol {
+   margin: 10px;
+   padding: 0 15px;
+   list-style: decimal;
+   font-size: 20px;
+   color: #1E131E;
+   background-color: aliceblue;
+ }
+
+ li {
+   margin: 2px 15px;
+   padding-left: 10px;
+   line-height: 1.5;
+ }
+
+ .line {
+   width: 80%;
+   height: 3px;
+   margin: 25px auto 0;
+   background-color: rgb(113, 156, 38);
+ }
+
+ .buttons {
+   position: absolute;
+   top: 90%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   width: 100%;
+   height: 15vh;
+   min-height: 100px;
+   background-color: aliceblue;
+ }
+
+ aside button {
+   display: block;
+   padding: 5px 20px;
+   margin: 10px auto 0;
+   font-size: 20px;
+   line-height: 20px;
+   background-color: rgb(113, 156, 38);
+   color: aliceblue;
+   border: none;
+   border-radius: 3px;
+   transition: .5s;
+ }
+
+ button:hover {
+   font-size: 30px;
+   line-height: 30px;
+   padding: 5px 30px;
+ }
+
+ footer {
+   background-color: #1E131E;
+   color: aliceblue;
+   height: 5vh;
+   text-align: center;
+   line-height: 5vh;
+ }
+
+ @media (max-width: 1024px) {
+   aside h3 {
+     font-size: 12px;
+     margin: 10px auto 20px;
+   }
+
+   aside button {
+     font-size: 12px;
+     padding: 5px 10px;
+     line-height: 12px;
+   }
+
+   aside button:hover {
+     font-size: 14px;
+     padding: 5px 20px;
+     line-height: 14px;
+   }
+ }
